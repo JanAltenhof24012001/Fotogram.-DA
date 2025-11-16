@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="style.css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="accesInnerHTML()">   <!---  loads the photo collection  -->
     
-    <header>
-        <img src="" alt="">
+    <header class="MainHeader">
+        <img id="logo" class="Logo" src="./img/Fotogram_Logo.svg" alt="Fotogram logo">
     </header>
 
     <main>
+        <h1>Your personal photo album</h1>
 
+        <figure class="PhotoCollection" id="photo-collection">
+            
+        </figure>
+
+        <dialog id="dialog" class="Dialog" aria-labelledby="dialog-title">
+            
+        </dialog>
     </main>
 
     <footer>
-
+        <p>© 2025 Jan Altenhof</p>
     </footer>
+        
 </body>
 <script src="script.js"></script>
 </html>

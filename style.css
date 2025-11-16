@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+/* Header Style*/
+
+.MainHeader {
+    display: flex;
+    align-items: center;
+    background-color: #082029;
+    padding: 0px 160px;
+    min-height: 112px;
+}
+
+.Logo {
+    height: 75px;
+}
+
+/* Main Style*/
+
+main {
+    display: flex;
+    background-color: #05171E; 
+    padding: 0px 160px;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-block: 0;
+    margin: 20px 0px;
+    color: white;
+    text-align: center;
+}
+
+.PhotoCollection {
+    display: block;
+    flex: 1;
+    text-align: center;
+}
+
+.Photos {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.Photos:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 25px white;
+}
+
+/*Dialog Style */
+
+.Dialog {
+    padding: 0;
+    background-color: #082029;
+    border-radius: 5%;
+    border-width: 5px;
+}
+
+.DialogHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.DialogTitle {
+    color: white;
+}
+
+.DialogMain {
+    padding: 10px;
+}
+
+.DialogClose {
+    height: 40px;
+    width: 40px;
+}
+
+.DialogClose:hover {
+    cursor: pointer;
+}
+
+.DialogPhotos {
+    width: 600px;
+    height: 500px;
+    border-radius: 5%;
+}
+
+.DialogNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.ArrowNavigation {
+    height: 50px;
+    width: 50px;
+}
+
+.ArrowNavigation:hover {
+    cursor: pointer;
+}
+
+.CurrentPosition {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Footer Style*/
+
+footer {
+    background-color: #082029;
+    padding: 0px 160px;
+    min-height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1280px) {
+    body {
+        font-size: 20px;
+    }
+    
+    .MainHeader,
+    main,
+    footer        {
+        padding: 0 24px;
+    }
+
+    .Photos {
+        width: 175px;
+        height: 125px;
+}
+
+    .DialogPhotos {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .MainHeader, 
+    footer        {
+        
+        min-height: 64px;
+    
+    }
+
+    .MainHeader,
+    main,
+    footer        {
+        padding: 0 16px;
+    }
+
+    .Photos {
+        width: 150px;
+        height: 100px;
+}
+
+    .DialogPhotos {
+        width: 240px;
+        height: 200px;
+    }
+
+    .Logo {
+        height: 50px;
+    }
+}
