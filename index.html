@@ -13,25 +13,33 @@
 <body onload="accesInnerHTML()">   <!---  loads the photo collection  -->
     
     <header class="MainHeader">
-        <img id="logo" class="Logo" src="./img/Fotogram_Logo.svg" alt="Fotogram logo">
+        <div class="HeaderContentLimiter">
+            <img id="logo" class="Logo" src="./img/Fotogram_Logo.svg" alt="Fotogram logo">
+        </div>
     </header>
-
+    
+    
     <main>
-        <h1>Your personal photo album</h1>
+        <div class="MainContentLimiter">
+            <h1>Your personal photo album</h1>
 
-        <figure class="PhotoCollection" id="photo-collection">
+            <figure class="PhotoCollection" id="photo-collection">
             
-        </figure>
+            </figure>
 
-        <dialog id="dialog" class="Dialog" aria-labelledby="dialog-title">
-            
-        </dialog>
+            <dialog id="dialog" class="Dialog" aria-labelledby="dialog-title">
+                
+            </dialog>
+        </div>
     </main>
-
+    
+    
+    
     <footer>
         <p>© 2025 Jan Altenhof</p>
     </footer>
-        
+     
 </body>
 <script src="script.js"></script>
+<script src="templateFunctions.js"></script>
 </html>
