@@ -89,13 +89,13 @@ h1 {
     color: white;
 }
 
-.DialogMain {
-    padding: 10px;
-}
-
 .DialogClose {
     height: 40px;
     width: 40px;
+    font-size: 100%;
+    color: white;
+    background-color: #082029 ;
+    border-width: 0;
 }
 
 .DialogClose:hover {
@@ -106,6 +106,7 @@ h1 {
     width: 600px;
     height: 500px;
     border-radius: 5%;
+    padding: 10px;
 }
 
 .DialogNav {
@@ -118,6 +119,10 @@ h1 {
 .ArrowNavigation {
     height: 50px;
     width: 50px;
+    font-size: 100%;
+    color: white;
+    background-color: #082029 ;
+    border-width: 0;
 }
 
 .ArrowNavigation:hover {
@@ -177,6 +182,10 @@ footer {
         
         min-height: 64px;
     
+    }
+
+    .HeaderContentLimiter {
+        min-height: 64px;
     }
 
     .MainHeader,
