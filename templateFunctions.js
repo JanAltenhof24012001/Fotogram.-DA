@@ -30,13 +30,13 @@ function innerDialog(ArrayPosition) {
 /* Arrow images to navigate the Photo Collection */
 function innerDialogNav(ArrayPosition) {
     return  `<nav class="DialogNav">
-                <button class="ArrowNavigation" id="previous-picture" tabindex="-1" onclick=previousPicture(`+(ArrayPosition-1)+`) aria-label="previous picture">
+                <button class="ArrowNavigation" id="previous-picture" onclick=accesInnerDialog(`+(ArrayPosition-1)+`) aria-label="previous picture">
                     <<
                 </button>
                 <p class="CurrentPosition">`
                     +(ArrayPosition + 1)+'/'+PHOTO_COLLECTION.length+
                 `</p>
-                <button class="ArrowNavigation" id="next-picture" tabindex="-1" onclick=nextPicture(`+(ArrayPosition+1)+`) aria-label="next picture">
+                <button class="ArrowNavigation" id="next-picture" onclick=accesInnerDialog(`+(ArrayPosition+1)+`) aria-label="next picture">
                     >>
                 </button>
             </nav>`;

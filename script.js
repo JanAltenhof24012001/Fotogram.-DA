@@ -52,6 +52,7 @@ function accesInnerDialog(ArrayPosition) {
     }
     DIALOG_CONTENT.innerHTML = innerDialog(ArrayPosition);
     DIALOG_CONTENT.innerHTML += innerDialogNav(ArrayPosition);
+    focusOnDialogOpen()
 };
 
 /*Focus on title of Dialog on opening the Dialog*/
